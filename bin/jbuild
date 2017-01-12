@@ -1,0 +1,11 @@
+(executables
+ ((names (main))
+  (libraries (base sexplib mini_dialyzer))
+  (link_flags (-linkall))
+  (preprocess no_preprocessing)))
+
+(provides (mini_dialyzer_test (file main.exe)))
+
+(install
+ ((section bin)
+  (files ((main.exe as mini_dialyzer_test)))))

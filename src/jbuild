@@ -1,0 +1,4 @@
+(library
+ ((name mini_dialyzer)
+  (public_name mini_dialyzer)
+  (libraries (base))))

@@ -1,0 +1,20 @@
+opam-version: "1.2"
+maintainer: "amutake.s@gmail.com"
+authors: ["Shohei Yasutake <amutake.s@gmail.com>"]
+homepage: "https://github.com/amutake/mini_dialyzer"
+bug-reports: "https://github.com/amutake/mini_dialyzer/issues"
+dev-repo: "https://github.com/amutake/mini_dialyzer.git"
+license: "Apache-2.0"
+build: [
+  ["jbuilder" "build-package" "mini_dialyzer" "-j" jobs]
+]
+depends: [
+  "base"
+  "ppx_sexp_conv" {build}
+  "ppx_compare" {build}
+  "jbuilder" {build}
+]
+available: [ ocaml-version >= "4.03.0" ]
+descr: "
+mini_dialyzer - dialyzer for mini-Erlang
+"
