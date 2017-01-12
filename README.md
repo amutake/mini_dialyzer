@@ -7,6 +7,5 @@ Installation
 ------------
 
 ```sh
-make
-make install PREFIX=$HOME/.opam/$(opam switch show)
+opam pin add mini_dialyzer .
 ```
